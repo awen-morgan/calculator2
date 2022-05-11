@@ -4,7 +4,51 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>calculator2</title>
-  </head>
-  <body></body>
+    <title>Calculator</title>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css" >
+    
+    </head>
+  
+    
+<body>
+
+  <div class="calc">
+
+    <input id="input"></input>
+    
+    <div class="numbers">
+      <div class="col-1">
+        <button onclick="numberAppear(1)">1</button>
+        <button  onclick="numberAppear(2)" >2</button>
+        <button  onclick="numberAppear(3)">3</button>
+      </div>
+
+      <div class="col-2">
+        <button  onclick="numberAppear(4)">4</button>
+        <button  onclick="numberAppear(5)">5</button>
+        <button  onclick="numberAppear(6)">6</button>
+      </div>
+
+      <div class="col-3">
+          <button  onclick="numberAppear(7)">7</button>
+          <button  onclick="numberAppear(8)">8</button>
+          <button  onclick="numberAppear(9)">9</button>
+      </div>
+
+      <div class="col-4">
+        <button  onclick="numberAppear(0)">0</button>
+      </div>
+    
+    <div class="maths">
+      <button id="plus" onclick="mathSymbolAppear(`+`)">+</button>
+      <button id="minus" onclick="mathSymbolAppear(`-`)">-</button>
+      <button id="times"onclick="mathSymbolAppear(`*`)">*</button>
+      <button id="divide" onclick="mathSymbolAppear(`/`) ">/</button>
+      <button id="decimal" onclick="numberAppear(`.`)">.</button>
+      <button id="equals" onclick="equalsAppear(`=`)"> = </button>
+    </div>
+  </div>
+
+</body>
 </html>
